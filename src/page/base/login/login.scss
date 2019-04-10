@@ -1,0 +1,164 @@
+@import "../../../style/variables";
+
+h3 {
+  font-size: 18px;
+  color: $_pm-default-dark-color;
+}
+
+.loginWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../../../assets/img/loginBg.png") no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: absolute;
+  width: 63%;
+  height: 68.5%;
+  min-width: 800px;
+  top: 12%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url("../../../assets/img/loginCenter.png") no-repeat;
+  background-size: 100% 100%;
+
+  .leftShow {
+    position: absolute;
+    left: 15%;
+    top: 17%;
+    width: 32%;
+    height: 60%;
+    background: url("../../../assets/img/loginCp.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .loginBox {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 17%;
+
+    .loginLogo {
+      margin: auto;
+      width: 64px;
+      height: 64px;
+      background: url("../../../assets/img/loginLogo.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    h3 {
+      text-align: center;
+      font-size: 18px;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+      color: rgba(83, 83, 83, 1);
+      line-height: 25px;
+      margin-top: 25px;
+    }
+    .el-form {
+      width: 54%;
+      margin: auto;
+      margin-top: 5%;
+      .loginUIcon {
+        width: 18px;
+        height: 23px;
+        display: inline-block;
+        background: url("../../../assets/img/loginUser.png") no-repeat;
+        background-size: 100% 100%;
+        margin-top: 6px;
+      }
+      .loginPIcon {
+        width: 17px;
+        height: 23px;
+        display: inline-block;
+        background: url("../../../assets/img/loginPw.png") no-repeat;
+        background-size: 100% 100%;
+        margin-top: 6px;
+      }
+      .loginBtn {
+        margin-top: 13%;
+        .el-button {
+          width: 100%;
+          height: 49px;
+          background: rgba(79, 147, 254, 1);
+          border-radius: 30px;
+          span {
+            color: white;
+            width: 44px;
+            font-size: 20px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            line-height: 25px;
+          }
+        }
+      }
+      .el-checkbox {
+        margin-left: 4px;
+      }
+
+      .el-input__inner {
+        border: 0;
+        border-bottom: 2px solid rgba(236, 236, 236, 1);
+      }
+      i {
+        color: $_pm-default-table-color;
+      }
+
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 6%;
+  width: 100%;
+  text-align: center;
+  p {
+    color: rgba(17, 106, 143, 1);;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1288px) {
+  .content {
+    height: 62.5%;
+    .leftShow {
+      left: 14%;
+      width: 34%;
+    }
+    .loginBox {
+      h3 {
+        margin-top: 12px;
+      }
+      .el-form {
+        margin-top: 4%;
+        width: 57%;
+        .loginUIcon {
+          width: 17px;
+          height: 21px;
+          margin-top: 4px;
+        }
+        .loginPIcon {
+          width: 17px;
+          height: 21px;
+          margin-top: 4px;
+        }
+        .el-input__inner {
+          height: 34px;
+        }
+        .loginBtn {
+          margin-top: 13%;
+          .el-button {
+            height: 40px;
+            span {
+              font-size: 18px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
